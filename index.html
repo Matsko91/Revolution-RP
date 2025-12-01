@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Règlement — Révolution City RP (template)</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0f172a;
+      --accent-2:#2563eb;
+      --nav-width:260px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--accent);line-height:1.45}
+    header{background:#0b1220;color:#fff;padding:18px 20px;display:flex;align-items:center;gap:14px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{width:44px;height:44px;border-radius:8px;object-fit:cover}
+    .logo h1{font-size:1.05rem;margin:0;font-weight:600}
+
+    .container{display:flex;min-height:calc(100vh - 72px)}
+    nav.sidebar{width:var(--nav-width);background:linear-gradient(180deg,#0f172a, #0b1220);color:#d1d5db;padding:18px;border-right:1px solid rgba(255,255,255,0.03)}
+    nav .section{margin-bottom:18px}
+    nav .section h3{font-size:0.85rem;color:#9ca3af;margin:8px 0}
+    nav a{display:block;padding:8px 10px;border-radius:6px;color:inherit;text-decoration:none;font-size:0.95rem}
+    nav a:hover{background:rgba(255,255,255,0.03)}
+
+    main.content{flex:1;padding:28px}
+    .card{background:var(--card);padding:22px;border-radius:10px;box-shadow:0 6px 18px rgba(12,12,14,0.06);max-width:900px}
+    h2.title{margin:0 0 12px 0;font-size:1.35rem}
+    .meta{color:var(--muted);font-size:0.95rem;margin-bottom:18px}
+    p{margin:0 0 12px 0;color:#111827}
+
+    footer{padding:18px 20px;background:#fff;border-top:1px solid #e6e9ee;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:880px){
+      nav.sidebar{display:none}
+      .container{flex-direction:column}
+    }
+
+    /* simple search box like the site */
+    .search{margin-bottom:12px}
+    .search input{width:100%;padding:8px 10px;border-radius:8px;border:1px solid #e6e9ee}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://reglement.diamondcity.fr/site-logo.png" alt="logo" onerror="this.style.display='none'" />
+      <div>
+        <h1>Révolution City RP</h1>
+        <div style="font-size:0.85rem;color:#cbd5e1">Règlement</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar" aria-label="Navigation principale">
+      <div class="search">
+        <input type="search" placeholder="Rechercher sur le site…" />
+      </div>
+      <div class="section">
+        <h3>Menu</h3>
+        <a href="#">Accueil</a>
+        <a href="#">Réglement</a>
+        <a href="#">Illégal</a>
+        <a href="#">Légal</a>
+        <a href="#">Discord</a>
+      </div>
+      <div class="section">
+        <h3>Liens utiles</h3>
+        <a href="#">Notre Site</a>
+        <a href="#">Boutique</a>
+        <a href="#">Discord</a>
+      </div>
+      <div style="margin-top:18px;font-size:0.85rem;color:#94a3b8">Copyright © Revolution City RP</div>
+    </nav>
+
+    <main class="content">
+      <article class="card" role="article">
+        <h2 class="title">Règlement Diamond</h2>
+        <div class="meta">Dernière mise à jour &middot; <!-- mettez une date ici -->  — Important</div>
+
+        <section>
+          <p>Le règlement est considéré comme lu et approuvé lorsque le joueur rejoint le serveur.</p>
+          <p>Nous nous réservons le droit de modifier les règles à tout moment et sans aucun préavis.</p>
+          <p>Il est donc recommandé de relire le règlement régulièrement.</p>
+          <p>Vous pouvez proposer des nouvelles règles en ticket ou en suggestion qui seront analysées par le Staff, si elle rentre dans l’intérêt global du serveur et des joueurs.</p>
+          <p>Nous rappelons que chaque action que vous réalisez est enregistrée dans des journaux (logs). Ces informations permettent de vous protéger, et de pouvoir sanctionner les comportements inappropriés de façon différée.</p>
+          <p>Le serveur a pour unique but de permettre aux joueurs de s’amuser et de passer du bon temps. Si vous n’êtes pas capable de vous comporter correctement. Nous vous invitons à passer votre chemin !</p>
+        </section>
+
+      </article>
+    </main>
+  </div>
+
+  <footer>
+    <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>Google Sites &bull; Report abuse</div>
+      <div>Ce site utilise des cookies pour fournir ses services et analyser le trafic.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
